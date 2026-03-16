@@ -1,7 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { Wrench, Phone, MapPin, Mail, Clock, ChevronRight } from "lucide-react"
+import Image from "next/image"
+import { Phone, MapPin, Mail, Clock, ChevronRight } from "lucide-react"
 import { CTAButton } from "./cta-button"
 
 const residentialLinks = [
@@ -48,14 +49,14 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Column 1: Logo & Mission */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-gold rounded-lg flex items-center justify-center">
-                <Wrench className="w-6 h-6 text-pitch" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display font-bold text-lg text-warm leading-tight">KAM</span>
-                <span className="text-xs text-steel leading-tight">Mechanical Construction</span>
-              </div>
+            <Link href="/" className="inline-block mb-6">
+              <Image
+                src="/images/kam-logo.png"
+                alt="KAM Mechanical Construction LLC"
+                width={100}
+                height={100}
+                className="w-24 h-24 hover:scale-105 transition-transform duration-300"
+              />
             </Link>
             <p className="text-steel text-sm leading-relaxed mb-6">
               Engineering the backbone of infrastructure while elevating home comfort. 

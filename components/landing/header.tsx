@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Menu, X, Wrench } from "lucide-react"
+import Image from "next/image"
+import { Menu, X } from "lucide-react"
 import { CTAButton } from "./cta-button"
 import { cn } from "@/lib/utils"
 
@@ -37,14 +38,15 @@ export function Header() {
       <nav className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-gold rounded-lg flex items-center justify-center group-hover:shadow-gold transition-shadow duration-300">
-              <Wrench className="w-6 h-6 text-pitch" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display font-bold text-lg text-warm leading-tight">KAM</span>
-              <span className="text-xs text-steel leading-tight">Mechanical Construction</span>
-            </div>
+          <Link href="/" className="flex items-center group">
+            <Image
+              src="/images/kam-logo.png"
+              alt="KAM Mechanical Construction LLC"
+              width={64}
+              height={64}
+              className="w-14 h-14 md:w-16 md:h-16 group-hover:scale-105 transition-transform duration-300"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
