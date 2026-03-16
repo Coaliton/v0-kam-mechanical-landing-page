@@ -1,6 +1,9 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Montserrat, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { LiveChat } from '@/components/shared/live-chat'
+import { CookieConsent } from '@/components/shared/cookie-consent'
+import { MobileCallButton } from '@/components/shared/call-tracking'
 import './globals.css'
 
 const inter = Inter({ 
@@ -65,6 +68,9 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${montserrat.variable} ${playfair.variable}`}>
       <body className="font-sans antialiased bg-background text-foreground">
         {children}
+        <LiveChat />
+        <MobileCallButton />
+        <CookieConsent />
         <Analytics />
       </body>
     </html>

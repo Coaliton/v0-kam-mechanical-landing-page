@@ -8,10 +8,10 @@ import { CTAButton } from "./cta-button"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#projects", label: "Projects" },
-  { href: "#safety", label: "Safety" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/services", label: "Services" },
+  { href: "/projects", label: "Projects" },
+  { href: "/about", label: "About" },
+  { href: "/#faq", label: "FAQ" },
 ]
 
 export function Header() {
