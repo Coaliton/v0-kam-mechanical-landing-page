@@ -1,0 +1,263 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================
+   KAM MECHANICAL CONSTRUCTION LLC
+   Design Token Document - Luxury Industrial
+   ============================================ */
+
+:root {
+  /* Primary Color Palette (5 Colors) */
+  --pitch-black: #0A0A0A;
+  --deep-charcoal: #1A1A1A;
+  --metallic-gold: #D4AF37;
+  --warm-white: #F5F5F0;
+  --steel-gray: #6B7280;
+  
+  /* Gold Variations */
+  --gold-light: #E5C76B;
+  --gold-dark: #B8962E;
+  --gold-glow: rgba(212, 175, 55, 0.2);
+  
+  /* Semantic Tokens */
+  --background: var(--pitch-black);
+  --foreground: var(--warm-white);
+  --card: var(--deep-charcoal);
+  --card-foreground: var(--warm-white);
+  --popover: var(--deep-charcoal);
+  --popover-foreground: var(--warm-white);
+  --primary: var(--metallic-gold);
+  --primary-foreground: var(--pitch-black);
+  --secondary: var(--deep-charcoal);
+  --secondary-foreground: var(--warm-white);
+  --muted: var(--deep-charcoal);
+  --muted-foreground: var(--steel-gray);
+  --accent: var(--metallic-gold);
+  --accent-foreground: var(--pitch-black);
+  --destructive: #B91C1C;
+  --destructive-foreground: var(--warm-white);
+  --border: #2A2A2A;
+  --input: #2A2A2A;
+  --ring: var(--metallic-gold);
+  
+  /* Chart Colors */
+  --chart-1: var(--metallic-gold);
+  --chart-2: var(--steel-gray);
+  --chart-3: #4B5563;
+  --chart-4: var(--gold-light);
+  --chart-5: var(--gold-dark);
+  
+  /* Radius */
+  --radius: 0.5rem;
+  
+  /* Sidebar (if needed) */
+  --sidebar: var(--deep-charcoal);
+  --sidebar-foreground: var(--warm-white);
+  --sidebar-primary: var(--metallic-gold);
+  --sidebar-primary-foreground: var(--pitch-black);
+  --sidebar-accent: #2A2A2A;
+  --sidebar-accent-foreground: var(--warm-white);
+  --sidebar-border: #2A2A2A;
+  --sidebar-ring: var(--metallic-gold);
+}
+
+/* Dark mode is default - light mode override if needed */
+.light {
+  --background: var(--warm-white);
+  --foreground: var(--pitch-black);
+  --card: #FFFFFF;
+  --card-foreground: var(--pitch-black);
+  --primary: var(--metallic-gold);
+  --primary-foreground: var(--pitch-black);
+  --muted: #F3F4F6;
+  --muted-foreground: var(--steel-gray);
+  --border: #E5E7EB;
+  --input: #E5E7EB;
+}
+
+@theme inline {
+  /* Typography */
+  --font-sans: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+  --font-display: 'Montserrat', 'Montserrat Fallback', sans-serif;
+  
+  /* Color Mappings */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  
+  /* Custom Color Utilities */
+  --color-gold: var(--metallic-gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --color-charcoal: var(--deep-charcoal);
+  --color-pitch: var(--pitch-black);
+  --color-steel: var(--steel-gray);
+  --color-warm: var(--warm-white);
+  
+  /* Radius Scale */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-full: 9999px;
+  
+  /* Sidebar */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  
+  /* Custom Selection Color */
+  ::selection {
+    background-color: var(--metallic-gold);
+    color: var(--pitch-black);
+  }
+}
+
+@layer utilities {
+  /* Gold Glow Effect */
+  .gold-glow {
+    box-shadow: 0 0 20px var(--gold-glow), 0 0 40px var(--gold-glow);
+  }
+  
+  .gold-glow-sm {
+    box-shadow: 0 0 10px var(--gold-glow);
+  }
+  
+  /* Lift Hover Effect */
+  .hover-lift {
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Gold Border Glow on Hover */
+  .hover-gold-border {
+    transition: border-color 300ms ease-out, box-shadow 300ms ease-out;
+  }
+  
+  .hover-gold-border:hover {
+    border-color: var(--metallic-gold);
+    box-shadow: 0 0 15px var(--gold-glow);
+  }
+  
+  /* Text Gradient Gold */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, var(--gold-light) 0%, var(--metallic-gold) 50%, var(--gold-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Animated Underline */
+  .animated-underline {
+    position: relative;
+  }
+  
+  .animated-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--metallic-gold);
+    transition: width 300ms ease-out;
+  }
+  
+  .animated-underline:hover::after {
+    width: 100%;
+  }
+  
+  /* Card Hover Scale */
+  .hover-scale {
+    transition: transform 300ms ease-out;
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Fade In Animation */
+  .fade-in-up {
+    animation: fadeInUp 600ms ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Certificate Border Style */
+  .certificate-border {
+    border: 2px solid var(--metallic-gold);
+    position: relative;
+  }
+  
+  .certificate-border::before {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border: 1px solid var(--metallic-gold);
+    pointer-events: none;
+  }
+  
+  /* Font Display Class */
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
