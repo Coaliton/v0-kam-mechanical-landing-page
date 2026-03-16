@@ -66,7 +66,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${montserrat.variable} ${playfair.variable}`}>
+    <html lang="en" data-scroll-behavior="smooth" className={`${inter.variable} ${montserrat.variable} ${playfair.variable}`}>
       <body className="font-sans antialiased bg-background text-foreground">
         {children}
         <LiveChat />
