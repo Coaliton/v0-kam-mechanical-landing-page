@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/next'
 import { LiveChat } from '@/components/shared/live-chat'
 import { CookieConsent } from '@/components/shared/cookie-consent'
 import { MobileCallButton } from '@/components/shared/call-tracking'
+import { FloatingSocialBar } from '@/components/shared/social-links'
 import './globals.css'
 
 const inter = Inter({ 
@@ -70,6 +71,7 @@ export default function RootLayout({
         {children}
         <LiveChat />
         <MobileCallButton />
+        <FloatingSocialBar />
         <CookieConsent />
         <Analytics />
       </body>
