@@ -156,6 +156,11 @@ export function SocialShare({ url, title, className }: SocialShareProps) {
   )
 }
 
+// Floating Social Bar - standalone export for layout
+export function FloatingSocialBar() {
+  return <SocialLinks variant="floating" />
+}
+
 // Social Feed Section
 export function SocialFeed() {
   const posts = [

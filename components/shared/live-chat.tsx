@@ -1,19 +1,26 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { MessageCircle, X, Send, Phone, Clock } from "lucide-react"
 import Image from "next/image"
 
 export function LiveChat() {
   const [isOpen, setIsOpen] = useState(false)
   const [message, setMessage] = useState("")
-  const [messages, setMessages] = useState<Array<{ text: string; isUser: boolean; time: string }>>([
-    {
-      text: "Hi there! Welcome to KAM Mechanical. How can we help you today?",
-      isUser: false,
-      time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-    }
-  ])
+  const [messages, setMessages] = useState<Array<{ text: string; isUser: boolean; time: string }>>([])
+  const [isClient, setIsClient] = useState(false)
+
+  // Initialize messages on client to avoid hydration mismatch
+  useEffect(() => {
+    setIsClient(true)
+    setMessages([
+      {
+        text: "Hi there! Welcome to KAM Mechanical. How can we help you today?",
+        isUser: false,
+        time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      }
+    ])
+  }, [])
 
   const handleSend = () => {
     if (!message.trim()) return
