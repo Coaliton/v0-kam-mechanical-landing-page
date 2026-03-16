@@ -1,7 +1,7 @@
 "use client"
 
 import { Award, Shield, Clock, CheckCircle } from "lucide-react"
-import { CTAButton } from "./cta-button"
+import { CTALink } from "./cta-button"
 
 const guarantees = [
   {
@@ -74,9 +74,9 @@ export function GuaranteeSection() {
 
           {/* CTA */}
           <div className="text-center">
-            <CTAButton variant="solid" size="lg">
+            <CTALink href="/contact" variant="solid" size="lg">
               Get Your Free Estimate
-            </CTAButton>
+            </CTALink>
           </div>
 
           {/* Certificate Footer */}

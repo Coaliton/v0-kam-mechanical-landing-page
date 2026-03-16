@@ -10,7 +10,7 @@ import {
   Check,
   BadgeCheck
 } from "lucide-react"
-import { CTAButton } from "./cta-button"
+import { CTALink } from "./cta-button"
 
 const commercialServices = [
   {
@@ -199,9 +199,9 @@ export function FeatureGrid() {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <CTAButton variant="solid" size="lg">
+          <CTALink href="/services" variant="solid" size="lg">
             View All Services
-          </CTAButton>
+          </CTALink>
         </div>
       </div>
     </section>

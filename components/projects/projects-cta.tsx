@@ -1,7 +1,7 @@
 "use client"
 
 import { Phone, FileText } from "lucide-react"
-import { CTAButton } from "@/components/landing/cta-button"
+import { CTALink } from "@/components/landing/cta-button"
 
 export function ProjectsCTA() {
   return (
@@ -18,14 +18,14 @@ export function ProjectsCTA() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-              <CTAButton variant="solid" size="lg">
+              <CTALink href="/contact" variant="solid" size="lg">
                 <FileText className="w-5 h-5 mr-2" />
                 Request a Proposal
-              </CTAButton>
-              <CTAButton variant="outline" size="lg">
+              </CTALink>
+              <CTALink href="tel:+18005551234" external variant="outline" size="lg">
                 <Phone className="w-5 h-5 mr-2" />
                 (800) 555-1234
-              </CTAButton>
+              </CTALink>
             </div>
             
             <p className="text-sm text-steel">

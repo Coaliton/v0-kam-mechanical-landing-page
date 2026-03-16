@@ -1,8 +1,8 @@
 "use client"
 
-import Link from "next/link"
 import { ArrowRight, Phone } from "lucide-react"
-import { CTAButton } from "@/components/landing/cta-button"
+import { CTALink } from "@/components/landing/cta-button"
+import { SmartLink } from "@/components/shared/smart-link"
 
 export function AboutCTA() {
   return (
@@ -19,16 +19,16 @@ export function AboutCTA() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
-            <CTAButton variant="solid" size="lg">
+            <CTALink href="/contact" variant="solid" size="lg">
               Request a Quote
-            </CTAButton>
-            <Link 
+            </CTALink>
+            <SmartLink 
               href="/services"
               className="inline-flex items-center gap-2 px-6 py-3 text-gold hover:text-gold-light font-medium transition-colors group"
             >
               View Our Services
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
+            </SmartLink>
           </div>
           
           {/* Quick Contact */}

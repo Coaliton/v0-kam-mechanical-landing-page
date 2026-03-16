@@ -1,24 +1,24 @@
 "use client"
 
-import Link from "next/link"
 import Image from "next/image"
 import { Phone, MapPin, Mail, Clock, ChevronRight } from "lucide-react"
 import { CTAButton } from "./cta-button"
+import { SmartLink } from "@/components/shared/smart-link"
 
 const residentialLinks = [
-  { label: "AC Installation", href: "#" },
-  { label: "Home Repiping", href: "#" },
-  { label: "Maintenance Plans", href: "#" },
-  { label: "Emergency Repairs", href: "#" },
-  { label: "Indoor Air Quality", href: "#" },
+  { label: "AC Installation", href: "/services/residential" },
+  { label: "Home Repiping", href: "/services/residential" },
+  { label: "Maintenance Plans", href: "/services/residential" },
+  { label: "Emergency Repairs", href: "/services/emergency" },
+  { label: "Indoor Air Quality", href: "/services/residential" },
 ]
 
 const commercialLinks = [
-  { label: "Industrial Piping", href: "#" },
-  { label: "BIM Services", href: "#" },
-  { label: "HVAC Systems", href: "#" },
-  { label: "Building Automation", href: "#" },
-  { label: "Preventive Maintenance", href: "#" },
+  { label: "Industrial Piping", href: "/services/commercial" },
+  { label: "BIM Services", href: "/services/commercial" },
+  { label: "HVAC Systems", href: "/services/commercial" },
+  { label: "Building Automation", href: "/services/commercial" },
+  { label: "Preventive Maintenance", href: "/services/commercial" },
 ]
 
 export function Footer() {
@@ -49,7 +49,7 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Column 1: Logo & Mission */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-block mb-6">
+            <SmartLink href="/" className="inline-block mb-6">
               <Image
                 src="/images/kam-logo.png"
                 alt="KAM Mechanical Construction LLC"
@@ -57,7 +57,7 @@ export function Footer() {
                 height={100}
                 className="w-24 h-24 hover:scale-105 transition-transform duration-300"
               />
-            </Link>
+            </SmartLink>
             <p className="text-steel text-sm leading-relaxed mb-6">
               Engineering the backbone of infrastructure while elevating home comfort. 
               Serving commercial and residential clients with precision and integrity since 2009.
@@ -74,13 +74,13 @@ export function Footer() {
             <ul className="space-y-3">
               {residentialLinks.map((link) => (
                 <li key={link.label}>
-                  <Link 
+                  <SmartLink 
                     href={link.href}
                     className="flex items-center gap-2 text-steel hover:text-gold transition-colors group"
                   >
                     <ChevronRight className="w-4 h-4 text-gold/50 group-hover:text-gold group-hover:translate-x-1 transition-all" />
                     <span>{link.label}</span>
-                  </Link>
+                  </SmartLink>
                 </li>
               ))}
             </ul>
@@ -92,13 +92,13 @@ export function Footer() {
             <ul className="space-y-3">
               {commercialLinks.map((link) => (
                 <li key={link.label}>
-                  <Link 
+                  <SmartLink 
                     href={link.href}
                     className="flex items-center gap-2 text-steel hover:text-gold transition-colors group"
                   >
                     <ChevronRight className="w-4 h-4 text-gold/50 group-hover:text-gold group-hover:translate-x-1 transition-all" />
                     <span>{link.label}</span>
-                  </Link>
+                  </SmartLink>
                 </li>
               ))}
             </ul>
@@ -167,8 +167,8 @@ export function Footer() {
 
             {/* Legal Links */}
             <div className="flex items-center gap-6 text-sm text-steel">
-              <Link href="#" className="hover:text-gold transition-colors">Privacy Policy</Link>
-              <Link href="#" className="hover:text-gold transition-colors">Terms of Service</Link>
+              <SmartLink href="/privacy" className="hover:text-gold transition-colors">Privacy Policy</SmartLink>
+              <SmartLink href="/terms" className="hover:text-gold transition-colors">Terms of Service</SmartLink>
               <span>&copy; {new Date().getFullYear()} KAM Mechanical Construction LLC</span>
             </div>
           </div>

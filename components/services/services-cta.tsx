@@ -1,7 +1,7 @@
 "use client"
 
 import { Phone, Mail, Clock } from "lucide-react"
-import { CTAButton } from "@/components/landing/cta-button"
+import { CTALink } from "@/components/landing/cta-button"
 
 export function ServicesCTA() {
   return (
@@ -54,12 +54,12 @@ export function ServicesCTA() {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <CTAButton variant="solid" size="lg">
+              <CTALink href="/contact" variant="solid" size="lg">
                 Request a Quote
-              </CTAButton>
-              <CTAButton variant="outline" size="lg">
+              </CTALink>
+              <CTALink href="/schedule" variant="outline" size="lg">
                 Schedule Consultation
-              </CTAButton>
+              </CTALink>
             </div>
           </div>
           

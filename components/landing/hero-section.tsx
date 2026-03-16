@@ -1,6 +1,6 @@
 "use client"
 
-import { CTAButton } from "./cta-button"
+import { CTALink } from "./cta-button"
 import { Building2, Home, ArrowRight } from "lucide-react"
 
 export function HeroSection() {
@@ -59,10 +59,10 @@ export function HeroSection() {
               engineering that powers progress.
             </p>
             
-            <CTAButton variant="outline" size="lg" className="group">
+            <CTALink href="/services/commercial" variant="outline" size="lg" className="group">
               Commercial Solutions
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </CTAButton>
+            </CTALink>
           </div>
 
           {/* Residential Panel */}
@@ -83,10 +83,10 @@ export function HeroSection() {
               Your comfort, guaranteed.
             </p>
             
-            <CTAButton variant="solid" size="lg" className="group">
+            <CTALink href="/services/residential" variant="solid" size="lg" className="group">
               Residential Services
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </CTAButton>
+            </CTALink>
           </div>
 
         </div>

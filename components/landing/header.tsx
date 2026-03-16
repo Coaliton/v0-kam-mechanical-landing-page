@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Menu, X } from "lucide-react"
-import { CTAButton } from "./cta-button"
+import { CTALink } from "./cta-button"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
@@ -64,9 +64,9 @@ export function Header() {
 
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
-            <CTAButton variant="solid" size="md">
+            <CTALink href="/contact" variant="solid" size="md">
               Request a Bid
-            </CTAButton>
+            </CTALink>
           </div>
 
           {/* Mobile Menu Button */}
@@ -98,9 +98,9 @@ export function Header() {
                   {link.label}
                 </Link>
               ))}
-              <CTAButton variant="solid" size="md" className="mt-2 w-full">
+              <CTALink href="/contact" variant="solid" size="md" className="mt-2 w-full">
                 Request a Bid
-              </CTAButton>
+              </CTALink>
             </div>
           </div>
         </div>
