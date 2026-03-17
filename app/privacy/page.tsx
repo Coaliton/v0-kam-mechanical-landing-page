@@ -138,10 +138,13 @@ export default function PrivacyPage() {
                     </p>
                     <div className="bg-pitch rounded-lg p-4 border border-gold/10">
                       <p className="font-semibold text-warm mb-2">KAM Mechanical Construction LLC</p>
-                      <p>Email: privacy@kammechanical.com</p>
-                      <p>Phone: 1-800-555-1234</p>
-                      <p>Address: 123 Industrial Blvd, Suite 100, Houston, TX 77001</p>
+                      <p>Email: kamcllc7@gmail.com</p>
+                      <p>Phone: (504) 648-6777</p>
+                      <p>Address: 1615 Poydras St, New Orleans, LA 70112</p>
                     </div>
+                    <p className="mt-4 text-sm text-gold">
+                      Service Area: Greater New Orleans metropolitan area only
+                    </p>
                   </div>
                 </section>
 

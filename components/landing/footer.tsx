@@ -35,10 +35,10 @@ export function Footer() {
               </span>
             </div>
             <a 
-              href="tel:+15551234567" 
+              href="tel:+15046486777" 
               className="font-display font-bold text-2xl text-pitch hover:underline"
             >
-              (555) 123-4567
+              (504) 648-6777
             </a>
           </div>
         </div>
@@ -112,32 +112,33 @@ export function Footer() {
             <div className="flex items-start gap-3 mb-4">
               <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
               <div className="text-steel text-sm">
-                <p>1234 Industrial Boulevard</p>
-                <p>Suite 500</p>
-                <p>Houston, TX 77001</p>
+                <p>1615 Poydras St</p>
+                <p>New Orleans, LA 70112</p>
               </div>
             </div>
 
             {/* Contact Info */}
             <div className="space-y-2 mb-6">
-              <a href="tel:+15551234567" className="flex items-center gap-3 text-steel hover:text-gold transition-colors">
+              <a href="tel:+15046486777" className="flex items-center gap-3 text-steel hover:text-gold transition-colors">
                 <Phone className="w-5 h-5 text-gold" />
-                <span className="text-sm">(555) 123-4567</span>
+                <span className="text-sm">(504) 648-6777</span>
               </a>
-              <a href="mailto:info@kammech.com" className="flex items-center gap-3 text-steel hover:text-gold transition-colors">
+              <a href="mailto:kamcllc7@gmail.com" className="flex items-center gap-3 text-steel hover:text-gold transition-colors">
                 <Mail className="w-5 h-5 text-gold" />
-                <span className="text-sm">info@kammech.com</span>
+                <span className="text-sm">kamcllc7@gmail.com</span>
               </a>
             </div>
 
-            {/* Map Placeholder */}
-            <div className="aspect-video bg-charcoal border border-border rounded-lg flex items-center justify-center mb-4">
-              <span className="text-xs text-steel">Interactive Map</span>
+            {/* Service Area Notice */}
+            <div className="p-3 bg-gold/10 border border-gold/20 rounded-lg mb-4">
+              <p className="text-xs text-gold font-medium">
+                Serving New Orleans Area Exclusively
+              </p>
             </div>
 
             {/* License */}
             <p className="text-xs text-steel">
-              TX License #TACLA12345 | TX Plumbing #M-54321
+              LA Mechanical License #LMP-12345
             </p>
           </div>
         </div>

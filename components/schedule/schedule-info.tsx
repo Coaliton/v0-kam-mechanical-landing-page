@@ -14,11 +14,11 @@ export function ScheduleInfo() {
               For urgent HVAC emergencies, call us directly for immediate assistance.
             </p>
             <Link
-              href="tel:+18005551234"
+              href="tel:+15046486777"
               className="inline-flex items-center gap-2 text-gold font-semibold hover:underline"
             >
               <Phone className="w-4 h-4" />
-              (800) 555-1234
+              (504) 648-6777
             </Link>
           </div>
         </div>

@@ -20,17 +20,17 @@ export function CareersCTA() {
               </p>
               
               <div className="space-y-4 mb-8">
-                <a href="mailto:careers@kammechanical.com" className="flex items-center gap-3 text-steel hover:text-gold transition-colors">
+                <a href="mailto:kamcllc7@gmail.com" className="flex items-center gap-3 text-steel hover:text-gold transition-colors">
                   <Mail className="w-5 h-5 text-gold" />
-                  careers@kammechanical.com
+                  kamcllc7@gmail.com
                 </a>
-                <a href="tel:+18005551234" className="flex items-center gap-3 text-steel hover:text-gold transition-colors">
+                <a href="tel:+15046486777" className="flex items-center gap-3 text-steel hover:text-gold transition-colors">
                   <Phone className="w-5 h-5 text-gold" />
-                  (800) 555-1234 ext. HR
+                  (504) 648-6777
                 </a>
                 <div className="flex items-center gap-3 text-steel">
                   <MapPin className="w-5 h-5 text-gold" />
-                  123 Industrial Blvd, Metro City
+                  1615 Poydras St, New Orleans, LA 70112
                 </div>
               </div>
 

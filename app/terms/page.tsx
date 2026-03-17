@@ -162,12 +162,15 @@ export default function TermsPage() {
 
                 {/* Contact */}
                 <section className="mt-12 pt-8 border-t border-gold/10">
-                  <p className="text-steel">
+                  <p className="text-steel mb-4">
                     For questions about these Terms of Service, please contact us at{" "}
-                    <a href="mailto:legal@kammechanical.com" className="text-gold hover:underline">
-                      legal@kammechanical.com
+                    <a href="mailto:kamcllc7@gmail.com" className="text-gold hover:underline">
+                      kamcllc7@gmail.com
                     </a>{" "}
-                    or call <a href="tel:+18005551234" className="text-gold hover:underline">1-800-555-1234</a>.
+                    or call <a href="tel:+15046486777" className="text-gold hover:underline">(504) 648-6777</a>.
+                  </p>
+                  <p className="text-sm text-gold">
+                    Service Area: Our services are exclusively available within the Greater New Orleans metropolitan area.
                   </p>
                 </section>
 

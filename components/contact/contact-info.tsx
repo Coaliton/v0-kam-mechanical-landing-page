@@ -9,8 +9,8 @@ const businessHours = [
 ]
 
 const serviceAreas = [
-  "Houston", "Katy", "Sugar Land", "The Woodlands", 
-  "Pearland", "Pasadena", "Baytown", "League City"
+  "New Orleans", "Metairie", "Kenner", "Gretna", 
+  "Harvey", "Marrero", "Chalmette", "Slidell"
 ]
 
 export function ContactInfo() {
@@ -30,11 +30,11 @@ export function ContactInfo() {
               HVAC failure? Pipe burst? We&apos;re here when you need us most.
             </p>
             <a 
-              href="tel:+15559119911"
+              href="tel:+15046486777"
               className="inline-flex items-center gap-2 text-red-400 font-bold text-lg hover:text-red-300 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              (555) 911-9911
+              (504) 648-6777
             </a>
           </div>
         </div>
@@ -53,8 +53,8 @@ export function ContactInfo() {
             </div>
             <div>
               <p className="text-sm text-steel mb-1">Main Office</p>
-              <a href="tel:+15551234567" className="text-warm font-medium hover:text-gold transition-colors">
-                (555) 123-4567
+              <a href="tel:+15046486777" className="text-warm font-medium hover:text-gold transition-colors">
+                (504) 648-6777
               </a>
             </div>
           </div>
@@ -65,8 +65,8 @@ export function ContactInfo() {
             </div>
             <div>
               <p className="text-sm text-steel mb-1">Email</p>
-              <a href="mailto:info@kammechanical.com" className="text-warm font-medium hover:text-gold transition-colors">
-                info@kammechanical.com
+              <a href="mailto:kamcllc7@gmail.com" className="text-warm font-medium hover:text-gold transition-colors">
+                kamcllc7@gmail.com
               </a>
             </div>
           </div>
@@ -78,8 +78,8 @@ export function ContactInfo() {
             <div>
               <p className="text-sm text-steel mb-1">Office Address</p>
               <p className="text-warm font-medium">
-                1234 Industrial Blvd, Suite 100<br />
-                Houston, TX 77001
+                1615 Poydras St<br />
+                New Orleans, LA 70112
               </p>
             </div>
           </div>
@@ -128,9 +128,14 @@ export function ContactInfo() {
             </span>
           ))}
         </div>
-        <p className="text-steel text-sm mt-4">
-          Don&apos;t see your area? Contact us - we may still be able to help!
-        </p>
+        <div className="mt-4 p-3 bg-gold/10 border border-gold/20 rounded-lg">
+          <p className="text-gold text-sm font-medium">
+            New Orleans Area Exclusive Service
+          </p>
+          <p className="text-steel text-xs mt-1">
+            We proudly serve the Greater New Orleans metropolitan area exclusively, ensuring dedicated local expertise for our community.
+          </p>
+        </div>
       </div>
 
       {/* Trust Badges */}
@@ -138,7 +143,7 @@ export function ContactInfo() {
         <div className="bg-charcoal border border-border rounded-xl p-4 text-center">
           <Shield className="w-8 h-8 text-gold mx-auto mb-2" />
           <p className="text-warm font-medium text-sm">Licensed & Insured</p>
-          <p className="text-steel text-xs">TX License #12345</p>
+          <p className="text-steel text-xs">LA License #LMP-12345</p>
         </div>
         <div className="bg-charcoal border border-border rounded-xl p-4 text-center">
           <Award className="w-8 h-8 text-gold mx-auto mb-2" />

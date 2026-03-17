@@ -38,13 +38,13 @@ export function EmergencyHero() {
           {/* Emergency Phone */}
           <div className="flex flex-col items-center gap-6 mb-12">
             <a 
-              href="tel:+18005551234" 
+              href="tel:+15046486777" 
               className="group flex items-center gap-4 px-8 py-5 bg-red-600 hover:bg-red-500 text-white rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
               <Phone className="w-8 h-8 animate-bounce" />
               <div className="text-left">
                 <p className="text-sm opacity-80">Call Now - 24/7 Hotline</p>
-                <p className="text-2xl font-bold">(800) 555-1234</p>
+                <p className="text-2xl font-bold">(504) 648-6777</p>
               </div>
             </a>
             

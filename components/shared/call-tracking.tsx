@@ -9,13 +9,13 @@ interface CallTrackingButtonProps {
   className?: string
 }
 
-// Phone numbers for different tracking sources
-// In production, these would be dynamically assigned based on traffic source
+// Phone numbers for KAM Mechanical - New Orleans
+// Single number for all tracking sources
 const PHONE_NUMBERS = {
-  main: "(800) 555-1234",
-  emergency: "(800) 555-9999",
-  commercial: "(800) 555-2000",
-  residential: "(800) 555-3000",
+  main: "(504) 648-6777",
+  emergency: "(504) 648-6777",
+  commercial: "(504) 648-6777",
+  residential: "(504) 648-6777",
 }
 
 export function CallTrackingButton({

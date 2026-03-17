@@ -18,7 +18,7 @@ export function FAQCta() {
           {/* Contact Options */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <a 
-              href="tel:+18005551234"
+              href="tel:+15046486777"
               className="group p-6 bg-pitch border border-gold/20 hover:border-gold/40 rounded-2xl transition-all duration-300 hover:-translate-y-1"
             >
               <Phone className="w-10 h-10 text-gold mx-auto mb-4" />
@@ -26,11 +26,11 @@ export function FAQCta() {
                 Call Us
               </h3>
               <p className="text-steel text-sm mb-2">Mon-Fri 7AM-6PM</p>
-              <p className="text-gold font-semibold">(800) 555-1234</p>
+              <p className="text-gold font-semibold">(504) 648-6777</p>
             </a>
 
             <a
-              href="mailto:support@kammechanical.com"
+              href="mailto:kamcllc7@gmail.com"
               className="group p-6 bg-pitch border border-gold/20 hover:border-gold/40 rounded-2xl transition-all duration-300 hover:-translate-y-1"
             >
               <Mail className="w-10 h-10 text-gold mx-auto mb-4" />
@@ -38,7 +38,7 @@ export function FAQCta() {
                 Email Us
               </h3>
               <p className="text-steel text-sm mb-2">Response within 24hrs</p>
-              <p className="text-gold font-semibold">support@kam.com</p>
+              <p className="text-gold font-semibold">kamcllc7@gmail.com</p>
             </a>
 
             <div className="group p-6 bg-pitch border border-gold/20 hover:border-gold/40 rounded-2xl transition-all duration-300 hover:-translate-y-1">

@@ -87,11 +87,11 @@ export default function ComingSoonPage() {
                 Contact Us
               </Link>
               <a
-                href="tel:+18005551234"
+                href="tel:+15046486777"
                 className="inline-flex items-center gap-2 px-4 py-2 bg-charcoal text-warm rounded-lg hover:bg-pitch border border-gold/20 transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                Call Now
+                (504) 648-6777
               </a>
             </div>
 

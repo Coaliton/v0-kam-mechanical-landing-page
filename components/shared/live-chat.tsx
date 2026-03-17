@@ -37,7 +37,7 @@ export function LiveChat() {
     // Simulated auto-response
     setTimeout(() => {
       setMessages(prev => [...prev, {
-        text: "Thanks for your message! A team member will respond shortly. For urgent matters, please call us at (800) 555-1234.",
+        text: "Thanks for your message! A team member will respond shortly. For urgent matters, please call us at (504) 648-6777. We proudly serve the Greater New Orleans area.",
         isUser: false,
         time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       }])
@@ -97,11 +97,11 @@ export function LiveChat() {
         {/* Quick Actions */}
         <div className="p-3 border-b border-border flex gap-2">
           <a 
-            href="tel:+18005551234"
+            href="tel:+15046486777"
             className="flex-1 flex items-center justify-center gap-2 py-2 bg-gold/10 border border-gold/30 rounded-lg text-gold text-sm hover:bg-gold/20 transition-colors"
           >
             <Phone className="w-4 h-4" />
-            Call Now
+            (504) 648-6777
           </a>
           <div className="flex-1 flex items-center justify-center gap-2 py-2 bg-pitch border border-border rounded-lg text-steel text-sm">
             <Clock className="w-4 h-4" />

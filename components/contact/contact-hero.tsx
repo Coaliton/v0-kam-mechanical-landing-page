@@ -29,7 +29,7 @@ export function ContactHero() {
           {/* Quick Contact Cards */}
           <div className="grid sm:grid-cols-3 gap-4">
             <a 
-              href="tel:+15551234567"
+              href="tel:+15046486777"
               className="flex items-center gap-3 p-4 bg-pitch/50 border border-border rounded-lg hover:border-gold/50 transition-colors group"
             >
               <div className="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center group-hover:bg-gold/20 transition-colors">
@@ -37,12 +37,12 @@ export function ContactHero() {
               </div>
               <div>
                 <p className="text-xs text-steel">Call Us</p>
-                <p className="text-warm font-medium">(555) 123-4567</p>
+                <p className="text-warm font-medium">(504) 648-6777</p>
               </div>
             </a>
             
             <a 
-              href="mailto:info@kammechanical.com"
+              href="mailto:kamcllc7@gmail.com"
               className="flex items-center gap-3 p-4 bg-pitch/50 border border-border rounded-lg hover:border-gold/50 transition-colors group"
             >
               <div className="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center group-hover:bg-gold/20 transition-colors">
@@ -50,7 +50,7 @@ export function ContactHero() {
               </div>
               <div>
                 <p className="text-xs text-steel">Email Us</p>
-                <p className="text-warm font-medium text-sm">info@kammechanical.com</p>
+                <p className="text-warm font-medium text-sm">kamcllc7@gmail.com</p>
               </div>
             </a>
             
@@ -60,7 +60,7 @@ export function ContactHero() {
               </div>
               <div>
                 <p className="text-xs text-steel">Visit Us</p>
-                <p className="text-warm font-medium text-sm">Houston, TX Area</p>
+                <p className="text-warm font-medium text-sm">New Orleans, LA</p>
               </div>
             </div>
           </div>
