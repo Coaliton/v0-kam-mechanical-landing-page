@@ -125,12 +125,12 @@ export const ROUTE_REGISTRY: Record<string, RouteConfig> = {
     showInFooter: false,
   },
   
-  // Service Sub-pages (Placeholders)
+  // Service Sub-pages
   '/services/commercial': {
     path: '/services/commercial',
     title: 'Commercial Services',
     description: 'Industrial HVAC and mechanical construction services',
-    status: 'placeholder',
+    status: 'active',
     parent: '/services',
     showInNav: false,
     showInFooter: false,
@@ -139,27 +139,26 @@ export const ROUTE_REGISTRY: Record<string, RouteConfig> = {
     path: '/services/residential',
     title: 'Residential Services',
     description: 'Home HVAC installation, repair, and maintenance',
-    status: 'placeholder',
+    status: 'active',
     parent: '/services',
     showInNav: false,
     showInFooter: false,
   },
-  '/services/emergency': {
-    path: '/services/emergency',
+  '/emergency': {
+    path: '/emergency',
     title: '24/7 Emergency Services',
     description: 'Round-the-clock emergency HVAC repair services',
-    status: 'placeholder',
-    parent: '/services',
+    status: 'active',
     showInNav: false,
-    showInFooter: false,
+    showInFooter: true,
   },
   
-  // Additional Planned Pages
+  // Additional Pages
   '/careers': {
     path: '/careers',
     title: 'Careers',
     description: 'Join the KAM Mechanical Construction team',
-    status: 'coming-soon',
+    status: 'active',
     showInNav: false,
     showInFooter: true,
   },
@@ -167,7 +166,15 @@ export const ROUTE_REGISTRY: Record<string, RouteConfig> = {
     path: '/reviews',
     title: 'Customer Reviews',
     description: 'Read what our customers say about us',
-    status: 'coming-soon',
+    status: 'active',
+    showInNav: true,
+    showInFooter: true,
+  },
+  '/faq': {
+    path: '/faq',
+    title: 'FAQ',
+    description: 'Frequently asked questions about our services',
+    status: 'active',
     showInNav: false,
     showInFooter: true,
   },
