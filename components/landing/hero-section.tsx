@@ -59,8 +59,8 @@ export function HeroSection() {
               engineering that powers progress.
             </p>
             
-            <CTALink href="/services/commercial" variant="outline" size="lg" className="group">
-              Commercial Solutions
+            <CTALink href="/contact" variant="outline" size="lg" className="group">
+              Request a Bid
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </CTALink>
           </div>
@@ -83,8 +83,8 @@ export function HeroSection() {
               Your comfort, guaranteed.
             </p>
             
-            <CTALink href="/services/residential" variant="solid" size="lg" className="group">
-              Residential Services
+            <CTALink href="/schedule" variant="solid" size="lg" className="group">
+              Book Now
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </CTALink>
           </div>

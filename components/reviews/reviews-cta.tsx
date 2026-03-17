@@ -51,10 +51,10 @@ export function ReviewsCTA() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <CTALink href="/schedule" variant="solid" size="lg">
-                Schedule Service
+                Book Now
               </CTALink>
               <CTALink href="/contact" variant="outline" size="lg">
-                Request a Quote
+                Request a Bid
               </CTALink>
             </div>
           </div>

@@ -18,7 +18,6 @@ const services = [
     title: "AC Installation & Repair",
     description: "Complete air conditioning services from new installations to repairs and maintenance. We service all major brands.",
     features: ["New AC Installation", "AC Repair", "Tune-Ups", "Refrigerant Recharge", "Ductwork"],
-    startingPrice: "From $150",
     popular: true,
   },
   {
@@ -26,7 +25,6 @@ const services = [
     title: "Heating Systems",
     description: "Keep warm all winter with our furnace, heat pump, and boiler services including emergency repairs.",
     features: ["Furnace Repair", "Heat Pumps", "Boilers", "Radiant Heating", "Thermostats"],
-    startingPrice: "From $150",
     popular: false,
   },
   {
@@ -34,7 +32,6 @@ const services = [
     title: "Plumbing Services",
     description: "From leaky faucets to whole-home repiping, our licensed plumbers handle it all.",
     features: ["Leak Repair", "Drain Cleaning", "Repiping", "Fixture Install", "Sewer Lines"],
-    startingPrice: "From $99",
     popular: false,
   },
   {
@@ -42,7 +39,6 @@ const services = [
     title: "Indoor Air Quality",
     description: "Breathe easier with our air quality solutions including filtration, humidification, and UV purification.",
     features: ["Air Purifiers", "Humidifiers", "UV Lights", "Duct Cleaning", "Ventilation"],
-    startingPrice: "From $299",
     popular: false,
   },
   {
@@ -50,7 +46,6 @@ const services = [
     title: "Water Heaters",
     description: "Traditional and tankless water heater installation, repair, and maintenance services.",
     features: ["Tank Water Heaters", "Tankless Systems", "Repairs", "Maintenance", "Expansion Tanks"],
-    startingPrice: "From $199",
     popular: true,
   },
   {
@@ -58,7 +53,6 @@ const services = [
     title: "Maintenance Plans",
     description: "Preventive maintenance programs to keep your systems running efficiently and extend equipment life.",
     features: ["Annual Tune-Ups", "Priority Service", "Discounts", "No OT Charges", "Filter Delivery"],
-    startingPrice: "From $15/month",
     popular: false,
   },
 ]
@@ -76,7 +70,7 @@ export function ResidentialServicesList() {
             Complete Home Comfort Solutions
           </h2>
           <p className="text-steel text-lg">
-            Professional residential services with upfront pricing and satisfaction guaranteed.
+            Professional residential services with satisfaction guaranteed. Serving the New Orleans area.
           </p>
         </div>
 
@@ -117,10 +111,9 @@ export function ResidentialServicesList() {
                 ))}
               </ul>
 
-              {/* Price & CTA */}
-              <div className="flex items-center justify-between pt-4 border-t border-gold/10">
-                <span className="text-gold font-semibold text-sm">{service.startingPrice}</span>
-                <CTALink href="/schedule" variant="ghost" size="sm" className="group/link">
+              {/* CTA */}
+              <div className="pt-4 border-t border-gold/10">
+                <CTALink href="/schedule" variant="ghost" size="sm" className="group/link w-full justify-center">
                   Book Now
                   <ArrowRight className="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" />
                 </CTALink>

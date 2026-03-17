@@ -3,38 +3,30 @@ import { cn } from "@/lib/utils"
 
 const plans = [
   {
-    name: "6 Months",
-    rate: "0%",
-    rateLabel: "APR",
-    description: "Same as cash if paid in full",
+    name: "Short Term",
+    description: "Same as cash options",
     features: [
-      "No interest if paid in 6 months",
+      "Interest-free financing available",
       "Low minimum monthly payments",
       "No prepayment penalty",
       "Quick online application",
     ],
     popular: false,
-    minPurchase: "$500",
   },
   {
-    name: "12 Months",
-    rate: "0%",
-    rateLabel: "APR",
-    description: "Extended interest-free period",
+    name: "Standard",
+    description: "Most popular option",
     features: [
-      "No interest if paid in 12 months",
+      "Extended interest-free periods",
       "Manageable monthly payments",
       "No prepayment penalty",
       "Ideal for larger projects",
     ],
     popular: true,
-    minPurchase: "$1,000",
   },
   {
-    name: "60 Months",
-    rate: "9.99%",
-    rateLabel: "APR",
-    description: "Low fixed monthly payments",
+    name: "Extended",
+    description: "Low monthly payments",
     features: [
       "Fixed rate for term length",
       "Lowest monthly payment option",
@@ -42,12 +34,9 @@ const plans = [
       "Best for major installations",
     ],
     popular: false,
-    minPurchase: "$2,500",
   },
   {
-    name: "84 Months",
-    rate: "11.99%",
-    rateLabel: "APR",
+    name: "Premium",
     description: "Maximum flexibility",
     features: [
       "Extended payment timeline",
@@ -56,7 +45,6 @@ const plans = [
       "For premium systems",
     ],
     popular: false,
-    minPurchase: "$5,000",
   },
 ]
 
@@ -95,16 +83,7 @@ export function FinancingPlans() {
                 <h3 className="font-display text-xl font-bold text-warm mb-1">
                   {plan.name}
                 </h3>
-                <p className="text-sm text-steel mb-4">{plan.description}</p>
-
-                <div className="mb-6">
-                  <span className="text-4xl font-bold text-gold">{plan.rate}</span>
-                  <span className="text-steel ml-1">{plan.rateLabel}</span>
-                </div>
-
-                <div className="text-xs text-steel mb-4">
-                  Min. purchase: {plan.minPurchase}
-                </div>
+                <p className="text-sm text-steel mb-6">{plan.description}</p>
 
                 <ul className="space-y-3 mb-6">
                   {plan.features.map((feature) => (
@@ -123,7 +102,7 @@ export function FinancingPlans() {
                       : "border border-gold text-gold hover:bg-gold hover:text-pitch"
                   )}
                 >
-                  Apply Now
+                  Learn More
                 </button>
               </div>
             </div>

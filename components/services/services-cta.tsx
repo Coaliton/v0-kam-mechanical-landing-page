@@ -55,10 +55,10 @@ export function ServicesCTA() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <CTALink href="/contact" variant="solid" size="lg">
-                Request a Quote
+                Request a Bid
               </CTALink>
               <CTALink href="/schedule" variant="outline" size="lg">
-                Schedule Consultation
+                Book Now
               </CTALink>
             </div>
           </div>
@@ -67,14 +67,14 @@ export function ServicesCTA() {
           <div className="mt-8 p-6 bg-gold/10 border border-gold/30 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="text-center sm:text-left">
               <span className="block text-warm font-display font-semibold">24/7 Emergency Service Available</span>
-              <span className="text-steel text-sm">For urgent residential repairs, we&apos;re always just a call away.</span>
+              <span className="text-steel text-sm">For urgent repairs, we&apos;re always just a call away.</span>
             </div>
             <a 
               href="tel:+15046486777"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gold text-pitch font-semibold rounded-full hover:bg-gold-light transition-colors"
             >
               <Phone className="w-4 h-4" />
-              (504) 648-6777
+              Call Now
             </a>
           </div>
         </div>

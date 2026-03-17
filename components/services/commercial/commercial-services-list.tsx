@@ -18,42 +18,36 @@ const services = [
     title: "Industrial Piping Systems",
     description: "Complete design and installation of process piping, steam systems, compressed air, and specialty gas piping for industrial facilities.",
     features: ["Process Piping", "Steam Systems", "Compressed Air", "Medical Gas", "Chemical Lines"],
-    startingPrice: "Contact for Quote",
   },
   {
     icon: Cpu,
     title: "BIM Modeling & Coordination",
     description: "Advanced 3D modeling and clash detection for complex mechanical systems, ensuring seamless integration with other building trades.",
     features: ["3D Modeling", "Clash Detection", "As-Built Documentation", "VDC Services", "Prefabrication"],
-    startingPrice: "Contact for Quote",
   },
   {
     icon: Wind,
     title: "Commercial HVAC",
     description: "Design, installation, and maintenance of commercial heating, ventilation, and air conditioning systems for optimal climate control.",
     features: ["Rooftop Units", "Chillers", "Boilers", "VAV Systems", "Heat Pumps"],
-    startingPrice: "From $25,000",
   },
   {
     icon: Droplets,
     title: "Commercial Plumbing",
     description: "Full-service commercial plumbing from new construction to tenant improvements and emergency repairs.",
     features: ["New Construction", "Repiping", "Backflow Prevention", "Grease Traps", "Water Heaters"],
-    startingPrice: "From $5,000",
   },
   {
     icon: Gauge,
     title: "Building Automation",
     description: "Smart building controls and automation systems for energy efficiency, comfort, and operational visibility.",
     features: ["DDC Controls", "Energy Management", "Remote Monitoring", "Integration", "Analytics"],
-    startingPrice: "From $15,000",
   },
   {
     icon: Settings,
     title: "Preventive Maintenance",
     description: "Comprehensive maintenance programs to maximize equipment life, minimize downtime, and reduce operating costs.",
     features: ["Scheduled Service", "Filter Programs", "Equipment Inspections", "Priority Response", "Reports"],
-    startingPrice: "From $500/month",
   },
 ]
 
@@ -104,11 +98,10 @@ export function CommercialServicesList() {
                 ))}
               </ul>
 
-              {/* Price & CTA */}
-              <div className="flex items-center justify-between pt-4 border-t border-gold/10">
-                <span className="text-gold font-semibold text-sm">{service.startingPrice}</span>
-                <CTALink href="/contact" variant="ghost" size="sm" className="group/link">
-                  Get Quote
+              {/* CTA */}
+              <div className="pt-4 border-t border-gold/10">
+                <CTALink href="/contact" variant="ghost" size="sm" className="group/link w-full justify-center">
+                  Request a Bid
                   <ArrowRight className="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" />
                 </CTALink>
               </div>

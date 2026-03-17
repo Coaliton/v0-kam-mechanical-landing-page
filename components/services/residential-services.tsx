@@ -29,8 +29,7 @@ const services = [
       "Rebate assistance",
       "Financing options available"
     ],
-    priceRange: "$4,500 - $12,000",
-    guarantee: "Fixed Price Guarantee",
+    guarantee: "Satisfaction Guaranteed",
     popular: true
   },
   {
@@ -45,8 +44,7 @@ const services = [
       "Permits & inspections included",
       "One-week completion typical"
     ],
-    priceRange: "$3,500 - $15,000",
-    guarantee: "Fixed Price Guarantee",
+    guarantee: "Satisfaction Guaranteed",
     popular: false
   },
   {
@@ -61,8 +59,7 @@ const services = [
       "Energy efficiency upgrades",
       "Emergency heat service"
     ],
-    priceRange: "$3,000 - $10,000",
-    guarantee: "Fixed Price Guarantee",
+    guarantee: "Satisfaction Guaranteed",
     popular: false
   },
   {
@@ -77,8 +74,7 @@ const services = [
       "Air quality testing",
       "Energy audits available"
     ],
-    priceRange: "$500 - $5,000",
-    guarantee: "Satisfaction Guarantee",
+    guarantee: "Satisfaction Guaranteed",
     popular: false
   },
   {
@@ -87,14 +83,13 @@ const services = [
     description: "24/7 emergency service for urgent HVAC and plumbing issues. We're always ready to help.",
     features: [
       "24/7 emergency hotline",
-      "2-hour response guarantee",
+      "Rapid response times",
       "No overtime charges",
       "Fully stocked service vans",
       "Licensed & insured technicians",
-      "Upfront pricing always"
+      "New Orleans area service"
     ],
-    priceRange: "Starting at $149",
-    guarantee: "Response Time Guarantee",
+    guarantee: "Response Time Guaranteed",
     popular: false
   },
   {
@@ -104,13 +99,12 @@ const services = [
     features: [
       "Bi-annual tune-ups",
       "Priority emergency scheduling",
-      "15% discount on all parts",
+      "Discount on all parts",
       "No trip charges",
       "Extended equipment life",
       "Transferable to new owner"
     ],
-    priceRange: "$199/year",
-    guarantee: "Peace of Mind Guarantee",
+    guarantee: "Peace of Mind Guaranteed",
     popular: true
   },
 ]
@@ -120,7 +114,6 @@ function ServiceCard({
   title, 
   description,
   features, 
-  priceRange,
   guarantee,
   popular
 }: {
@@ -128,7 +121,6 @@ function ServiceCard({
   title: string
   description: string
   features: string[]
-  priceRange: string
   guarantee: string
   popular: boolean
 }) {
@@ -178,23 +170,13 @@ function ServiceCard({
       
       {/* Footer */}
       <div className="p-6 lg:p-8 bg-pitch/50">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <div>
-            <span className="block font-display font-bold text-lg text-gold">
-              {priceRange}
-            </span>
-            <span className="text-xs text-steel">
-              Transparent pricing, no surprises
-            </span>
-          </div>
-          <Link 
-            href="/contact?service=residential"
-            className="inline-flex items-center gap-2 text-sm font-medium text-gold hover:text-gold-light transition-colors group/link"
-          >
-            Schedule Service
-            <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-          </Link>
-        </div>
+        <Link 
+          href="/schedule"
+          className="inline-flex items-center justify-center gap-2 w-full py-3 bg-gold text-pitch font-semibold rounded-lg hover:bg-gold-light transition-colors group/link"
+        >
+          Book Now
+          <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+        </Link>
       </div>
     </article>
   )
@@ -257,7 +239,7 @@ export function ResidentialServices() {
             Ready to improve your home comfort?
           </p>
           <CTAButton variant="solid" size="md">
-            Schedule Free Consultation
+            Book Now
           </CTAButton>
         </div>
       </div>

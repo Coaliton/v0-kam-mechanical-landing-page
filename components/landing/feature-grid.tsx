@@ -21,7 +21,6 @@ const commercialServices = [
       "High-pressure steam systems",
       "Chilled water distribution"
     ],
-    price: "Starting at $25,000",
     category: "commercial"
   },
   {
@@ -32,7 +31,6 @@ const commercialServices = [
       "MEP coordination",
       "As-built documentation"
     ],
-    price: "Starting at $8,500",
     category: "commercial"
   },
   {
@@ -43,7 +41,6 @@ const commercialServices = [
       "VAV system design",
       "Building automation integration"
     ],
-    price: "Starting at $45,000",
     category: "commercial"
   },
 ]
@@ -57,7 +54,6 @@ const residentialServices = [
       "Same-day installation available",
       "10-year warranty included"
     ],
-    price: "$4,500 - $12,000",
     category: "residential",
     hasGuarantee: true
   },
@@ -69,7 +65,6 @@ const residentialServices = [
       "Minimal wall damage",
       "Lifetime pipe warranty"
     ],
-    price: "$3,500 - $15,000",
     category: "residential",
     hasGuarantee: true
   },
@@ -79,9 +74,8 @@ const residentialServices = [
     features: [
       "Bi-annual tune-ups",
       "Priority scheduling",
-      "15% parts discount"
+      "Parts discount included"
     ],
-    price: "$199/year",
     category: "residential",
     hasGuarantee: true
   },
@@ -91,14 +85,12 @@ function FeatureCard({
   icon: Icon, 
   title, 
   features, 
-  price, 
   category,
   hasGuarantee = false 
 }: {
   icon: React.ElementType
   title: string
   features: string[]
-  price: string
   category: string
   hasGuarantee?: boolean
 }) {
@@ -110,7 +102,7 @@ function FeatureCard({
       {hasGuarantee && (
         <div className="absolute -top-3 right-6 flex items-center gap-1 px-3 py-1 bg-gold text-pitch text-xs font-semibold rounded-full">
           <BadgeCheck className="w-3 h-3" />
-          Fixed Price Guarantee
+          Satisfaction Guaranteed
         </div>
       )}
       
@@ -134,7 +126,7 @@ function FeatureCard({
       </h3>
       
       {/* Features List */}
-      <ul className="space-y-3 mb-6">
+      <ul className="space-y-3">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start gap-3 text-steel">
             <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
@@ -142,13 +134,6 @@ function FeatureCard({
           </li>
         ))}
       </ul>
-      
-      {/* Price */}
-      <div className="pt-4 border-t border-border">
-        <span className="font-display font-bold text-lg text-gold">
-          {price}
-        </span>
-      </div>
     </article>
   )
 }

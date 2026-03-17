@@ -19,11 +19,11 @@ export function ResidentialCTA() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <CTALink href="/schedule" variant="solid" size="lg">
               <Calendar className="w-5 h-5 mr-2" />
-              Schedule Service
+              Book Now
             </CTALink>
             <CTALink href="tel:+15046486777" external variant="outline" size="lg">
               <Phone className="w-5 h-5 mr-2" />
-              (504) 648-6777
+              Call Now
             </CTALink>
           </div>
 
@@ -33,7 +33,7 @@ export function ResidentialCTA() {
               "Licensed & Insured",
               "Background Checked",
               "100% Satisfaction",
-              "Upfront Pricing",
+              "New Orleans Area",
             ].map((badge) => (
               <div key={badge} className="flex items-center gap-2 text-steel">
                 <Shield className="w-4 h-4 text-gold" />

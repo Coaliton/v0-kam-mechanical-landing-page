@@ -73,9 +73,12 @@ export function GuaranteeSection() {
           </div>
 
           {/* CTA */}
-          <div className="text-center">
+          <div className="text-center flex flex-col sm:flex-row items-center justify-center gap-4">
             <CTALink href="/contact" variant="solid" size="lg">
-              Get Your Free Estimate
+              Request a Bid
+            </CTALink>
+            <CTALink href="/schedule" variant="outline" size="lg">
+              Book Now
             </CTALink>
           </div>
 

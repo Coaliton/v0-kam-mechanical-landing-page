@@ -43,19 +43,12 @@ export function EmergencyHero() {
             >
               <Phone className="w-8 h-8 animate-bounce" />
               <div className="text-left">
-                <p className="text-sm opacity-80">Call Now - 24/7 Hotline</p>
-                <p className="text-2xl font-bold">(504) 648-6777</p>
+                <p className="text-sm opacity-80">24/7 Emergency Hotline</p>
+                <p className="text-2xl font-bold">Call Now</p>
               </div>
             </a>
             
-            <div className="flex flex-wrap justify-center gap-4">
-              <CTALink href="/contact" variant="outline" size="lg">
-                Request Emergency Service
-              </CTALink>
-              <CTALink href="/schedule" variant="ghost" size="lg">
-                Schedule for Later
-              </CTALink>
-            </div>
+            <p className="text-gold font-semibold text-lg">(504) 648-6777</p>
           </div>
 
           {/* Quick Stats */}

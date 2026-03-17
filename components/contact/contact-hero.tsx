@@ -23,7 +23,7 @@ export function ContactHero() {
           </h1>
           <p className="text-lg text-steel max-w-2xl mb-8">
             Whether you need industrial-scale mechanical systems or home comfort solutions, 
-            our team is ready to deliver excellence. Get your free estimate today.
+            our team is ready to deliver excellence. Contact us to get started.
           </p>
           
           {/* Quick Contact Cards */}

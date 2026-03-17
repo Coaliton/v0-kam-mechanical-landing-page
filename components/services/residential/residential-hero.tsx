@@ -36,10 +36,10 @@ export function ResidentialHero() {
           {/* CTAs */}
           <div className="flex flex-wrap gap-4 mb-12">
             <CTALink href="/schedule" variant="solid" size="lg">
-              Schedule Service
+              Book Now
             </CTALink>
-            <CTALink href="/financing" variant="outline" size="lg">
-              Financing Options
+            <CTALink href="tel:+15046486777" external variant="outline" size="lg">
+              Call Now
             </CTALink>
           </div>
 

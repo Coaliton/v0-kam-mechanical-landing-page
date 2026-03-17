@@ -15,44 +15,20 @@ export function EmergencyCTA() {
             Do not wait until a minor issue becomes a major disaster. Contact us now for immediate assistance.
           </p>
 
-          {/* Contact Options */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {/* Call */}
+          {/* Primary Call Now CTA */}
+          <div className="max-w-lg mx-auto mb-12">
             <a 
               href="tel:+15046486777"
-              className="group p-6 bg-red-600 hover:bg-red-500 rounded-2xl transition-all duration-300 hover:-translate-y-1"
+              className="group flex flex-col items-center p-8 bg-red-600 hover:bg-red-500 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
             >
-              <Phone className="w-10 h-10 text-white mx-auto mb-4" />
-              <h3 className="font-display text-xl font-semibold text-white mb-2">
+              <Phone className="w-16 h-16 text-white mb-4 animate-pulse" />
+              <h3 className="font-display text-2xl font-bold text-white mb-2">
                 Call Now
               </h3>
-              <p className="text-white/80 text-sm mb-3">Fastest response time</p>
-              <p className="text-white font-bold text-lg">(504) 648-6777</p>
+              <p className="text-white/90 text-sm mb-4">24/7 Emergency Response</p>
+              <p className="text-white font-bold text-3xl">(504) 648-6777</p>
+              <p className="text-white/70 text-sm mt-2">Fastest response time guaranteed</p>
             </a>
-
-            {/* Chat */}
-            <div className="group p-6 bg-pitch border border-gold/20 hover:border-gold/40 rounded-2xl transition-all duration-300 hover:-translate-y-1">
-              <MessageCircle className="w-10 h-10 text-gold mx-auto mb-4" />
-              <h3 className="font-display text-xl font-semibold text-warm mb-2">
-                Live Chat
-              </h3>
-              <p className="text-steel text-sm mb-3">Chat with our team</p>
-              <CTALink href="/contact" variant="outline" size="sm">
-                Start Chat
-              </CTALink>
-            </div>
-
-            {/* Schedule */}
-            <div className="group p-6 bg-pitch border border-gold/20 hover:border-gold/40 rounded-2xl transition-all duration-300 hover:-translate-y-1">
-              <Calendar className="w-10 h-10 text-gold mx-auto mb-4" />
-              <h3 className="font-display text-xl font-semibold text-warm mb-2">
-                Schedule
-              </h3>
-              <p className="text-steel text-sm mb-3">Book for a specific time</p>
-              <CTALink href="/schedule" variant="outline" size="sm">
-                Book Now
-              </CTALink>
-            </div>
           </div>
 
           {/* Service Areas */}

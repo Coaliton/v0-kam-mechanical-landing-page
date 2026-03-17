@@ -20,15 +20,11 @@ export function AboutCTA() {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
             <CTALink href="/contact" variant="solid" size="lg">
-              Request a Quote
+              Request a Bid
             </CTALink>
-            <SmartLink 
-              href="/services"
-              className="inline-flex items-center gap-2 px-6 py-3 text-gold hover:text-gold-light font-medium transition-colors group"
-            >
-              View Our Services
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </SmartLink>
+            <CTALink href="/schedule" variant="outline" size="lg">
+              Book Now
+            </CTALink>
           </div>
           
           {/* Quick Contact */}

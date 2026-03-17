@@ -26,7 +26,6 @@ const services = [
       "Chemical processing lines",
       "Welded & threaded installations"
     ],
-    price: "Starting at $25,000",
     timeline: "2-8 weeks depending on scope"
   },
   {
@@ -41,7 +40,6 @@ const services = [
       "Prefabrication planning",
       "Virtual reality walkthroughs"
     ],
-    price: "Starting at $8,500",
     timeline: "1-4 weeks depending on project size"
   },
   {
@@ -56,7 +54,6 @@ const services = [
       "Air handling unit installations",
       "Ductwork fabrication & install"
     ],
-    price: "Starting at $45,000",
     timeline: "4-16 weeks depending on scope"
   },
   {
@@ -71,7 +68,6 @@ const services = [
       "Thermal oil systems",
       "Process temperature controls"
     ],
-    price: "Starting at $35,000",
     timeline: "3-10 weeks depending on complexity"
   },
   {
@@ -86,7 +82,6 @@ const services = [
       "Seismic restraint systems",
       "Startup & commissioning"
     ],
-    price: "Starting at $15,000",
     timeline: "1-6 weeks depending on equipment"
   },
   {
@@ -101,7 +96,6 @@ const services = [
       "Quality assurance program",
       "Warranty & service support"
     ],
-    price: "Custom pricing",
     timeline: "Varies by project scope"
   },
 ]
@@ -111,14 +105,12 @@ function ServiceCard({
   title, 
   description,
   features, 
-  price, 
   timeline 
 }: {
   icon: React.ElementType
   title: string
   description: string
   features: string[]
-  price: string
   timeline: string
 }) {
   return (
@@ -158,19 +150,14 @@ function ServiceCard({
       {/* Footer */}
       <div className="p-6 lg:p-8 bg-pitch/50">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <div>
-            <span className="block font-display font-bold text-lg text-gold">
-              {price}
-            </span>
-            <span className="text-xs text-steel">
-              Timeline: {timeline}
-            </span>
-          </div>
+          <span className="text-xs text-steel">
+            Timeline: {timeline}
+          </span>
           <Link 
-            href="/contact?service=commercial"
-            className="inline-flex items-center gap-2 text-sm font-medium text-gold hover:text-gold-light transition-colors group/link"
+            href="/contact"
+            className="inline-flex items-center gap-2 py-2 px-4 bg-gold text-pitch font-semibold rounded-lg hover:bg-gold-light transition-colors group/link"
           >
-            Get Quote
+            Request a Bid
             <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
           </Link>
         </div>
