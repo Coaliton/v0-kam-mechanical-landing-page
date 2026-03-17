@@ -142,7 +142,7 @@ export function ContactForm() {
               onChange={handleChange}
               required
               className="w-full px-4 py-3 bg-pitch border border-border rounded-lg text-warm placeholder:text-steel/50 focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/50 transition-colors"
-              placeholder="(555) 123-4567"
+              placeholder="(504) 648-6777"
             />
           </div>
           <div>

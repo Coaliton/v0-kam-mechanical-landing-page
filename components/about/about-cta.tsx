@@ -35,8 +35,8 @@ export function AboutCTA() {
           <div className="inline-flex items-center gap-3 px-6 py-3 bg-pitch/50 border border-border rounded-full">
             <Phone className="w-5 h-5 text-gold" />
             <span className="text-steel">Or call us directly:</span>
-            <a href="tel:+18005551234" className="text-gold font-semibold hover:text-gold-light transition-colors">
-              (800) 555-1234
+            <a href="tel:+15046486777" className="text-gold font-semibold hover:text-gold-light transition-colors">
+              (504) 648-6777
             </a>
           </div>
         </div>

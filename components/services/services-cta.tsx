@@ -28,8 +28,8 @@ export function ServicesCTA() {
                   <Phone className="w-5 h-5 text-gold" />
                 </div>
                 <span className="text-warm font-medium mb-1">Call Us</span>
-                <a href="tel:+18005551234" className="text-gold hover:text-gold-light transition-colors">
-                  (800) 555-1234
+                <a href="tel:+15046486777" className="text-gold hover:text-gold-light transition-colors">
+                  (504) 648-6777
                 </a>
               </div>
               
@@ -38,8 +38,8 @@ export function ServicesCTA() {
                   <Mail className="w-5 h-5 text-gold" />
                 </div>
                 <span className="text-warm font-medium mb-1">Email Us</span>
-                <a href="mailto:info@kammechanical.com" className="text-gold hover:text-gold-light transition-colors">
-                  info@kammechanical.com
+                <a href="mailto:kamcllc7@gmail.com" className="text-gold hover:text-gold-light transition-colors">
+                  kamcllc7@gmail.com
                 </a>
               </div>
               
@@ -70,11 +70,11 @@ export function ServicesCTA() {
               <span className="text-steel text-sm">For urgent residential repairs, we&apos;re always just a call away.</span>
             </div>
             <a 
-              href="tel:+18005551234"
+              href="tel:+15046486777"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gold text-pitch font-semibold rounded-full hover:bg-gold-light transition-colors"
             >
               <Phone className="w-4 h-4" />
-              Emergency Line
+              (504) 648-6777
             </a>
           </div>
         </div>

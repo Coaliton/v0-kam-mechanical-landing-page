@@ -4,8 +4,8 @@ import { useState } from "react"
 import { Search, Phone, Mail, MessageCircle } from "lucide-react"
 
 const quickLinks = [
-  { icon: Phone, label: "Call Us", value: "(800) 555-1234", href: "tel:+18005551234" },
-  { icon: Mail, label: "Email", value: "support@kam.com", href: "mailto:support@kammechanical.com" },
+  { icon: Phone, label: "Call Us", value: "(504) 648-6777", href: "tel:+15046486777" },
+  { icon: Mail, label: "Email", value: "kamcllc7@gmail.com", href: "mailto:kamcllc7@gmail.com" },
   { icon: MessageCircle, label: "Live Chat", value: "Chat Now", href: "#" },
 ]
 

@@ -18,14 +18,14 @@ export function CommercialCTA() {
           {/* Contact Options */}
           <div className="grid md:grid-cols-3 gap-6">
             <a 
-              href="tel:+18005551234"
+              href="tel:+15046486777"
               className="group p-6 bg-pitch border border-gold/20 hover:border-gold/40 rounded-2xl transition-all duration-300 hover:-translate-y-1"
             >
               <Phone className="w-10 h-10 text-gold mx-auto mb-4" />
               <h3 className="font-display text-xl font-semibold text-warm mb-2">
                 Call Us
               </h3>
-              <p className="text-steel text-sm">(800) 555-1234</p>
+              <p className="text-steel text-sm">(504) 648-6777</p>
             </a>
 
             <div className="p-6 bg-gold rounded-2xl">
