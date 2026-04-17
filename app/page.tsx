@@ -1,7 +1,7 @@
 import { Header } from "@/components/landing/header"
 import TopUtilityBar from "@/components/home/TopUtilityBar"
 import Hero from "@/components/home/Hero"
-import { StatsStrip } from "@/components/landing/stats-strip"
+import TrustBar from "@/components/home/TrustBar"
 import { FeatureGrid } from "@/components/landing/feature-grid"
 import { GuaranteeSection } from "@/components/landing/guarantee"
 import { SocialProof } from "@/components/landing/social-proof"
@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <StatsStrip />
+        <TrustBar />
         <FeatureGrid />
         <GuaranteeSection />
         <SocialProof />
