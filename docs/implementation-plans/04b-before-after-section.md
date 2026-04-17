@@ -1,6 +1,6 @@
 # Implementation Plan 04b: Before/After Transformation Section
 
-**Status:** In Progress  
+**Status:** Complete  
 **Date Started:** 2026-04-17  
 **Related Prompt:** Prompt 4b — Before/After Section  
 **Previous:** 04a-remove-legacy-featuregrid.md
@@ -146,15 +146,15 @@ builder — proof that we do the work, not just list it.
 - Text metadata fills full width below images
 
 ## Testing Checklist
-- [ ] npm run dev — section renders after ServicesSection
-- [ ] 3 transformation cards visible
-- [ ] All 6 images load correctly (no 404s)
-- [ ] BEFORE / AFTER labels positioned correctly on images
-- [ ] Third card uses "IN PROGRESS" / "COMMISSIONED" labels
-- [ ] Project metadata displays below each pair
-- [ ] Desktop: Images side-by-side
-- [ ] Mobile: Images stack vertically
-- [ ] npm run build — No errors
+- [x] npm run dev — section renders after ServicesSection
+- [x] 3 transformation cards visible
+- [x] All 6 images load correctly (no 404s)
+- [x] BEFORE / AFTER labels positioned correctly on images
+- [x] Third card uses "IN PROGRESS" / "COMMISSIONED" labels
+- [x] Project metadata displays below each pair
+- [x] Desktop: Images side-by-side
+- [x] Mobile: Images stack vertically
+- [x] npm run build — No errors
 - [ ] Vercel preview deploys
 
 ## Git Commit Messages (Suggested)
@@ -163,3 +163,4 @@ feat(before-after): add transformation showcase section
 
 ## Status Log
 - 2026-04-17: Plan created, implementation started
+- 2026-04-17: Section implemented, validated in dev/build, plan completed
