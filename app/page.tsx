@@ -1,5 +1,6 @@
 import { Header } from "@/components/landing/header"
-import { HeroSection } from "@/components/landing/hero-section"
+import TopUtilityBar from "@/components/home/TopUtilityBar"
+import Hero from "@/components/home/Hero"
 import { StatsStrip } from "@/components/landing/stats-strip"
 import { FeatureGrid } from "@/components/landing/feature-grid"
 import { GuaranteeSection } from "@/components/landing/guarantee"
@@ -10,9 +11,10 @@ import { Footer } from "@/components/landing/footer"
 export default function Home() {
   return (
     <>
+      <TopUtilityBar />
       <Header />
       <main>
-        <HeroSection />
+        <Hero />
         <StatsStrip />
         <FeatureGrid />
         <GuaranteeSection />
