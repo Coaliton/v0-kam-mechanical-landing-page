@@ -13,6 +13,8 @@ import PricingCard from '@/components/services/PricingCard';
 import ServiceFAQ from '@/components/services/ServiceFAQ';
 import ServiceCTA from '@/components/services/ServiceCTA';
 import ComingSoonStub from '@/components/services/ComingSoonStub';
+import Breadcrumbs from '@/components/ui/Breadcrumbs';
+import type { BreadcrumbItem } from '@/components/ui/Breadcrumbs';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -43,9 +45,16 @@ export default async function ServiceDetailPage({ params }: Props) {
     notFound();
   }
 
+  const breadcrumbItems: BreadcrumbItem[] = [
+    { label: 'Home', href: '/' },
+    { label: 'Services', href: '/#services' },
+    { label: service.heroTitle },
+  ];
+
   if (service.status === 'coming-soon') {
     return (
       <main className="bg-black">
+        <Breadcrumbs items={breadcrumbItems} />
         <ComingSoonStub title={service.heroTitle} subtitle={service.heroSubtitle} />
       </main>
     );
@@ -53,6 +62,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   return (
     <main className="bg-black">
+      <Breadcrumbs items={breadcrumbItems} />
       <ServiceHero title={service.heroTitle} subtitle={service.heroSubtitle} image={service.heroImage} />
 
       {service.whatItIs && (

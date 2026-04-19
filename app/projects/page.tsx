@@ -1,5 +1,4 @@
 import { Metadata } from "next"
-import { Header } from "@/components/landing/header"
 import { Footer } from "@/components/landing/footer"
 import { ProjectsHero } from "@/components/projects/projects-hero"
 import { FeaturedProjects } from "@/components/projects/featured-projects"
@@ -15,7 +14,6 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <main className="min-h-screen bg-background">
-      <Header />
       <ProjectsHero />
       <FeaturedProjects />
       <ProjectsGrid />

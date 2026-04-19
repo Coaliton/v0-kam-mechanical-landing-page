@@ -4,6 +4,8 @@ import { Analytics } from '@vercel/analytics/next'
 import { LiveChat } from '@/components/shared/live-chat'
 import { CookieConsent } from '@/components/shared/cookie-consent'
 import { MobileCallButton } from '@/components/shared/call-tracking'
+import TopUtilityBar from '@/components/home/TopUtilityBar'
+import { Header } from '@/components/landing/header'
 import './globals.css'
 
 const inter = Inter({ 
@@ -67,6 +69,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${montserrat.variable} ${playfair.variable}`}>
       <body className="font-sans antialiased bg-background text-foreground">
+        <TopUtilityBar />
+        <Header />
         {children}
         <LiveChat />
         <MobileCallButton />

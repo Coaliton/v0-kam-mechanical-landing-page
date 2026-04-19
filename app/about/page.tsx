@@ -1,5 +1,4 @@
 import { Metadata } from "next"
-import { Header } from "@/components/landing/header"
 import { Footer } from "@/components/landing/footer"
 import { AboutHero } from "@/components/about/about-hero"
 import { CompanyStory } from "@/components/about/company-story"
@@ -17,7 +16,6 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background">
-      <Header />
       <AboutHero />
       <CompanyStory />
       <Values />

@@ -1,5 +1,3 @@
-import { Header } from "@/components/landing/header"
-import TopUtilityBar from "@/components/home/TopUtilityBar"
 import Hero from "@/components/home/Hero"
 import TrustBar from "@/components/home/TrustBar"
 import ServicesSection from "@/components/home/ServicesSection"
@@ -14,8 +12,6 @@ import { Footer } from "@/components/landing/footer"
 export default function Home() {
   return (
     <>
-      <TopUtilityBar />
-      <Header />
       <main>
         <Hero />
         <TrustBar />

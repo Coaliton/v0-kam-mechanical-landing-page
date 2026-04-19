@@ -7,6 +7,7 @@ export default function ServicesSection() {
 
   return (
     <section
+      id="services"
       aria-label="KAM Mechanical services"
       className="w-full bg-black py-20 md:py-28"
     >

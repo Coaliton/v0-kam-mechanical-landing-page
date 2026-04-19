@@ -1,5 +1,4 @@
 import { Metadata } from "next"
-import { Header } from "@/components/landing/header"
 import { Footer } from "@/components/landing/footer"
 import { ServicesHero } from "@/components/services/services-hero"
 import { CommercialServices } from "@/components/services/commercial-services"
@@ -15,7 +14,6 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-background">
-      <Header />
       <ServicesHero />
       <CommercialServices />
       <ResidentialServices />
