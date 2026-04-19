@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import { Footer } from "@/components/landing/footer"
 import { ContactHero } from "@/components/contact/contact-hero"
 import { ContactForm } from "@/components/contact/contact-form"
 import { ContactInfo } from "@/components/contact/contact-info"
@@ -19,7 +18,6 @@ export default function ContactPage() {
           <ContactInfo />
         </div>
       </div>
-      <Footer />
     </main>
   )
 }

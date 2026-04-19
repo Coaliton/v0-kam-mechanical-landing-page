@@ -1,5 +1,4 @@
 import { Metadata } from "next"
-import { Footer } from "@/components/landing/footer"
 import { AboutHero } from "@/components/about/about-hero"
 import { CompanyStory } from "@/components/about/company-story"
 import { TeamSection } from "@/components/about/team-section"
@@ -22,7 +21,6 @@ export default function AboutPage() {
       <TeamSection />
       <Certifications />
       <AboutCTA />
-      <Footer />
     </main>
   )
 }

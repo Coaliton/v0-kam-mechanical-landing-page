@@ -3,10 +3,15 @@ export const BUSINESS = {
   phone: "504-648-6777",
   phoneFormatted: "(504) 648-6777",
   phoneHref: "tel:+15046486777",
-  email: "", // to be filled in
+  email: "info@kammechanicalllc.com",
+  emailHref: "mailto:info@kammechanicalllc.com",
   emergencyText: "24/7 Emergency Service Available",
   serviceArea: "Serving New Orleans, Metairie, Kenner & surrounding parishes",
   extendedArea: "Commercial service available across Louisiana",
+  social: {
+    facebook: "https://facebook.com/kammechanicalllc",
+    google: "https://g.page/kammechanicalllc",
+  },
 } as const;
 
 export const COLORS = {

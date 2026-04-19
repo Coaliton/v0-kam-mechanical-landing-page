@@ -1,5 +1,4 @@
 import { Metadata } from "next"
-import { Footer } from "@/components/landing/footer"
 import { ServicesHero } from "@/components/services/services-hero"
 import { CommercialServices } from "@/components/services/commercial-services"
 import { ResidentialServices } from "@/components/services/residential-services"
@@ -18,7 +17,6 @@ export default function ServicesPage() {
       <CommercialServices />
       <ResidentialServices />
       <ServicesCTA />
-      <Footer />
     </main>
   )
 }

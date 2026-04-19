@@ -5,6 +5,7 @@ import { LiveChat } from '@/components/shared/live-chat'
 import { CookieConsent } from '@/components/shared/cookie-consent'
 import { MobileCallButton } from '@/components/shared/call-tracking'
 import TopUtilityBar from '@/components/home/TopUtilityBar'
+import Footer from '@/components/ui/Footer'
 import { Header } from '@/components/landing/header'
 import './globals.css'
 
@@ -72,6 +73,7 @@ export default function RootLayout({
         <TopUtilityBar />
         <Header />
         {children}
+        <Footer />
         <LiveChat />
         <MobileCallButton />
         <CookieConsent />

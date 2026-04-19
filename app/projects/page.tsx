@@ -1,5 +1,4 @@
 import { Metadata } from "next"
-import { Footer } from "@/components/landing/footer"
 import { ProjectsHero } from "@/components/projects/projects-hero"
 import { FeaturedProjects } from "@/components/projects/featured-projects"
 import { ProjectsGrid } from "@/components/projects/projects-grid"
@@ -18,7 +17,6 @@ export default function ProjectsPage() {
       <FeaturedProjects />
       <ProjectsGrid />
       <ProjectsCTA />
-      <Footer />
     </main>
   )
 }
