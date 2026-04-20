@@ -2,7 +2,11 @@ import Link from 'next/link';
 import { Phone, ArrowRight } from 'lucide-react';
 import { BUSINESS } from '@/lib/constants';
 
-export default function ServiceCTA() {
+type ServiceCTAProps = {
+  bookHref?: string;
+};
+
+export default function ServiceCTA({ bookHref = '/contact' }: ServiceCTAProps) {
   return (
     <section className="bg-black py-16 md:py-24">
       <div className="mx-auto max-w-4xl px-4 text-center md:px-6">
@@ -15,7 +19,7 @@ export default function ServiceCTA() {
 
         <div className="mx-auto flex max-w-md flex-col justify-center gap-4 sm:flex-row">
           <Link
-            href="/contact"
+            href={bookHref}
             className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-yellow-500 px-8 py-4 font-semibold text-black transition-colors hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-black"
           >
             Book Service

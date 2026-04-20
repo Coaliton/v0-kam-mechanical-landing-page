@@ -6,6 +6,7 @@ import {
   getServiceContent,
   getAllServiceSlugs,
 } from '@/lib/service-content';
+import { SERVICE_ROUTING } from '@/lib/contact-config';
 import ServiceHero from '@/components/services/ServiceHero';
 import ServiceSection from '@/components/services/ServiceSection';
 import ProcessSteps from '@/components/services/ProcessSteps';
@@ -45,6 +46,10 @@ export default async function ServiceDetailPage({ params }: Props) {
     notFound();
   }
 
+  const routing = SERVICE_ROUTING.find((s) => s.slug === slug);
+  const contactType = routing?.defaultType ?? 'residential';
+  const bookHref = `/contact?type=${contactType}&service=${slug}`;
+
   const breadcrumbItems: BreadcrumbItem[] = [
     { label: 'Home', href: '/' },
     { label: 'Services', href: '/#services' },
@@ -63,7 +68,12 @@ export default async function ServiceDetailPage({ params }: Props) {
   return (
     <main className="bg-black">
       <Breadcrumbs items={breadcrumbItems} />
-      <ServiceHero title={service.heroTitle} subtitle={service.heroSubtitle} image={service.heroImage} />
+      <ServiceHero
+        title={service.heroTitle}
+        subtitle={service.heroSubtitle}
+        image={service.heroImage}
+        bookHref={bookHref}
+      />
 
       {service.whatItIs && (
         <ServiceSection eyebrow="The Service" title="What It Is">
@@ -205,7 +215,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
       {service.faqs && service.faqs.length > 0 && <ServiceFAQ faqs={service.faqs} />}
 
-      <ServiceCTA />
+      <ServiceCTA bookHref={bookHref} />
     </main>
   );
 }

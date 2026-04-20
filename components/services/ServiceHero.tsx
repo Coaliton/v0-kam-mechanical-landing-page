@@ -7,9 +7,10 @@ type ServiceHeroProps = {
   title: string;
   subtitle: string;
   image: string | null;
+  bookHref?: string;
 };
 
-export default function ServiceHero({ title, subtitle, image }: ServiceHeroProps) {
+export default function ServiceHero({ title, subtitle, image, bookHref = '/contact' }: ServiceHeroProps) {
   return (
     <section className="relative w-full border-b border-white/10 bg-black" aria-label="Service overview">
       <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-24">
@@ -19,7 +20,7 @@ export default function ServiceHero({ title, subtitle, image }: ServiceHeroProps
             <p className="mb-8 max-w-2xl text-lg leading-relaxed text-neutral-300 md:text-xl">{subtitle}</p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <Link
-                href="/contact"
+                href={bookHref}
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-yellow-500 px-8 py-4 font-semibold text-black transition-colors hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-black"
               >
                 Book This Service
