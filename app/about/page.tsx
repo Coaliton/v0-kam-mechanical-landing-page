@@ -1,26 +1,74 @@
-import { Metadata } from "next"
-import { AboutHero } from "@/components/about/about-hero"
-import { CompanyStory } from "@/components/about/company-story"
-import { TeamSection } from "@/components/about/team-section"
-import { Values } from "@/components/about/values"
-import { Certifications } from "@/components/about/certifications"
-import { AboutCTA } from "@/components/about/about-cta"
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
+import Breadcrumbs from '@/components/ui/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: "About Us | KAM Mechanical Construction LLC",
-  description: "Learn about KAM Mechanical Construction's 15+ years of excellence in mechanical construction. Meet our team, discover our values, and see our certifications.",
-  keywords: ["about KAM Mechanical", "mechanical construction company", "HVAC contractor", "industrial piping company", "construction team"],
-}
+  title: 'About KAM Mechanical | Licensed HVAC Contractor | New Orleans',
+  description: 'KAM Mechanical LLC — licensed and insured mechanical contractor serving the New Orleans metro and statewide Louisiana.',
+};
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-background">
-      <AboutHero />
-      <CompanyStory />
-      <Values />
-      <TeamSection />
-      <Certifications />
-      <AboutCTA />
+    <main className="bg-black min-h-screen">
+      <Breadcrumbs items={[
+        { label: 'Home', href: '/' },
+        { label: 'About' },
+      ]} />
+      
+      <section className="min-h-[60vh] flex items-center justify-center 
+                          py-20">
+        <div className="max-w-2xl mx-auto px-4 md:px-6 text-center">
+          <div className="inline-flex items-center gap-2 
+                          bg-yellow-500/10 border border-yellow-500/30
+                          text-yellow-500 text-xs uppercase 
+                          tracking-widest font-semibold 
+                          px-4 py-2 rounded-full mb-6">
+            Coming Soon
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-white 
+                         mb-6 leading-tight">
+            About KAM Mechanical
+          </h1>
+          <p className="text-lg text-neutral-300 mb-4 max-w-xl mx-auto 
+                        leading-relaxed">
+            We're a licensed and insured mechanical contractor based in 
+            the New Orleans metro, serving homes across the parishes 
+            and commercial projects statewide.
+          </p>
+          <p className="text-sm text-neutral-400 mb-10 max-w-xl mx-auto">
+            A full company story is in the works. In the meantime, 
+            reach out directly — we're happy to talk through who we 
+            are and how we work.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link 
+              href="/"
+              className="inline-flex items-center justify-center gap-2 
+                         text-yellow-500 hover:text-yellow-400 
+                         focus-visible:outline-none focus-visible:ring-2 
+                         focus-visible:ring-yellow-500 focus-visible:ring-offset-2 
+                         focus-visible:ring-offset-black rounded-sm
+                         transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Home
+            </Link>
+            <span className="hidden sm:inline text-neutral-600">|</span>
+            <Link 
+              href="/contact"
+              className="inline-flex items-center justify-center 
+                         text-yellow-500 hover:text-yellow-400 
+                         focus-visible:outline-none focus-visible:ring-2 
+                         focus-visible:ring-yellow-500 focus-visible:ring-offset-2 
+                         focus-visible:ring-offset-black rounded-sm
+                         transition-colors"
+            >
+              Contact Us →
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
-  )
+  );
 }
